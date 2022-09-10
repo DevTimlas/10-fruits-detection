@@ -7,7 +7,7 @@ st.title("FruitsFood Detection with TF")
 st.header("Up to 10 classes of fruits Detection Test with Tensroflow")
 st.text("Upload a Fruit Image to detect and see it's contents.")
 st.text("Model not 99% accurate")
-RESULT_FOLDER = os.mkdir('/app/10-fruits-detection/static/')
+RESULT_FOLDER = os('./10-fruits-detection/')
 
 
 def make_predict(img_pth):
