@@ -22,7 +22,7 @@ def make_predict(img_pth):
     for v in info2['name']:
         st.write(v)
     # st.write(f"{info2.name.to_string(index=False)} \n")
-    print(os.getcwd())
+    st.write(os.getcwd())
     results.save(RESULT_FOLDER)
     predicted_image = Image.open('./image0.jpg')
     st.image(predicted_image, caption="Predicted Image", use_column_width=False)
