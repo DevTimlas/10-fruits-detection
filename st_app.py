@@ -1,7 +1,7 @@
 import streamlit as st
 import torch
 from PIL import Image, ImageOps
-import io
+import io, os
 
 st.title("FruitsFood Detection with TF")
 st.header("Up to 10 classes of fruits Detection Test with Tensroflow")
@@ -22,6 +22,7 @@ def make_predict(img_pth):
     for v in info2['name']:
         st.write(v)
     # st.write(f"{info2.name.to_string(index=False)} \n")
+    print(os.getcwd())
     results.save(RESULT_FOLDER)
     predicted_image = Image.open('./image0.jpg')
     st.image(predicted_image, caption="Predicted Image", use_column_width=False)
