@@ -7,7 +7,7 @@ st.title("FruitsFood Detection with TF")
 st.header("Up to 10 classes of fruits Detection Test with Tensroflow")
 st.text("Upload a Fruit Image to detect and see it's contents.")
 st.text("Model not 99% accurate")
-RESULT_FOLDER = './test/'
+RESULT_FOLDER = '/app/10-fruits-detection/'
 
 
 def make_predict(img_pth):
@@ -24,7 +24,7 @@ def make_predict(img_pth):
     # st.write(f"{info2.name.to_string(index=False)} \n")
     st.write(os.getcwd())
     results.save(RESULT_FOLDER)
-    predicted_image = Image.open('./image0.jpg')
+    predicted_image = Image.open('/app/10-fruits-detection/image0.jpg')
     st.image(predicted_image, caption="Predicted Image", use_column_width=False)
     # st.write(results.pandas().xyxy[0].to_json(orient='records'))
 
