@@ -1,0 +1,7 @@
+torch
+flask
+request
+argparse
+pillow
+os
+io
