@@ -7,7 +7,7 @@ st.title("FruitsFood Detection with TF")
 st.header("Up to 10 classes of fruits Detection Test with Tensroflow")
 st.text("Upload a Fruit Image to detect and see it's contents.")
 st.text("Model not 99% accurate")
-RESULT_FOLDER = './test'
+RESULT_FOLDER = './test/'
 
 
 def make_predict(img_pth):
