@@ -7,7 +7,7 @@ import io
 
 application = Flask(__name__)
 
-RESULT_FOLDER = './fruitsfooddetection/static'
+RESULT_FOLDER = './10-fruits-detection/static'
 application.config['RESULT_FOLDER'] = RESULT_FOLDER
 
 model = torch.load('ultralytics/yolov5', 'custom', './fruitsfooddetection/best.pt', force_reload=True)
