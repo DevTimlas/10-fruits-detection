@@ -23,7 +23,7 @@ def make_predict(img_pth):
         st.write(v)
     # st.write(f"{info2.name.to_string(index=False)} \n")
     results.save(RESULT_FOLDER)
-    predicted_image = Image.open('./fruitsfooddetection/static/image0.jpg')
+    predicted_image = Image.open('./10-fruits-detection/static/image0.jpg')
     st.image(predicted_image, caption="Predicted Image", use_column_width=False)
     # st.write(results.pandas().xyxy[0].to_json(orient='records'))
 
