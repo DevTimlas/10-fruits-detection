@@ -3,3 +3,7 @@ torch==1.10.0
 torchvision==0.11.1
 opencv-python-headless==4.5.1.48
 pillow
+pyyaml
+seaborn
+matplotlib
+numpy
