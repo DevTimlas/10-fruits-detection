@@ -3,9 +3,10 @@ import torch
 from PIL import Image, ImageOps
 import io
 
-st.title("Face Mask Detection with TF")
-st.header("Face Mask Detection Test with Tensroflow")
-st.text("Upload a face Image to detect maybe the person is wearing a face mask or not.")
+st.title("FruitsFood Detection with TF")
+st.header("Up to 10 classes of fruits Detection Test with Tensroflow")
+st.text("Upload a Fruit Image to detect and see it's contents.")
+st.text("Model not 99% accurate")
 RESULT_FOLDER = './fruitsfooddetection/static'
 
 
