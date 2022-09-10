@@ -7,3 +7,4 @@ pyyaml
 seaborn
 matplotlib
 numpy
+tqdm
