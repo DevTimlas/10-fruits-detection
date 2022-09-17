@@ -22,6 +22,7 @@ def make_predict(img_pth, image_file):
     ts = datetime.timestamp(datetime.now())
     imgpath = os.path.join('data/uploads', str(ts)+image_file.name)
     outputpath = os.path.join('data/outputs', os.path.basename(imgpath))
+    print(outputpath)
     with open(imgpath, mode="wb") as f:
         f.write(image_file.getbuffer())
 
