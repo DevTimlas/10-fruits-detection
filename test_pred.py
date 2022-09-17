@@ -10,6 +10,7 @@ img = '/home/tim/Downloads/test3.jpeg'  # or file, Path, PIL, OpenCV, numpy, lis
 
 # Inference
 results = model(img)
+results.render()
 
 results.crop(save=True, save_dir='./crop')
 
