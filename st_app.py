@@ -1,13 +1,18 @@
 import streamlit as st
 import torch
 from PIL import Image, ImageOps
+<<<<<<< HEAD
 import io, os, time
 from datetime import datetime
+=======
+import io, os
+>>>>>>> 84c3e6c6082eb3376c6839e2bea147bb3fa20ce2
 
-st.title("Face Mask Detection with TF")
-st.header("Face Mask Detection Test with Tensroflow")
-st.text("Upload a face Image to detect maybe the person is wearing a face mask or not.")
-RESULT_FOLDER = './fruitsfooddetection/static'
+st.title("FruitsFood Detection with TF")
+st.header("Up to 10 classes of fruits Detection Test with Tensroflow")
+st.text("Upload a Fruit Image to detect and see it's contents.")
+st.text("Model not 99% accurate")
+RESULT_FOLDER = './10-fruits-detection/'
 
 
 def make_predict(img_pth, image_file):
@@ -35,8 +40,14 @@ def make_predict(img_pth, image_file):
     img_ = Image.open(outputpath)
     st.image(img_, caption='Model Prediction(s)', use_column_width='always')
     # st.write(f"{info2.name.to_string(index=False)} \n")
+<<<<<<< HEAD
     #results.save(RESULT_FOLDER)
     # predicted_image = Image.open('./fruitsfooddetection/static/image0.jpg')
+=======
+    #st.write(os.getcwd())
+    results.save(RESULT_FOLDER)
+    #predicted_image = Image.open('/app/10-fruits-detection/image0.jpg')
+>>>>>>> 84c3e6c6082eb3376c6839e2bea147bb3fa20ce2
     #st.image(predicted_image, caption="Predicted Image", use_column_width=False)
     # st.write(results.pandas().xyxy[0].to_json(orient='records'))
 
