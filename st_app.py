@@ -28,6 +28,9 @@ def make_predict(img_pth, image_file):
 
     results = model(img)
     results.render()  # render bbox in image
+    info2 = results.pandas().xyxy[0]
+    for v in info2['name']:
+        st.write(v)
     """
     for im in results.imgs:
         im_base64 = Image.fromarray(im)
