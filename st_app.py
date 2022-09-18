@@ -31,6 +31,7 @@ def make_predict(img_pth, image_file):
     info2 = results.pandas().xyxy[0]
     for v in info2['name']:
         st.write(v)
+    print(results.imgs)
     """
     for im in results.imgs:
         im_base64 = Image.fromarray(im)
