@@ -28,14 +28,11 @@ def make_predict(img_pth, image_file):
 
     results = model(img)
     results.render()  # render bbox in image
-    info2 = results.pandas().xyxy[0]
-    for v in info2['name']:
-        st.write(v)
-    print(results.imgs)
-    """
-    for im in results.imgs:
+    
+    for im in results.ims:
         im_base64 = Image.fromarray(im)
         im_base64.save(outputpath)
+        
     info2 = results.pandas().xyxy[0]
     for v in info2['name']:
         st.write(v)
@@ -51,7 +48,7 @@ def make_predict(img_pth, image_file):
     #st.image(predicted_image, caption="Predicted Image", use_column_width=False)
     # st.write(results.pandas().xyxy[0].to_json(orient='records'))
 
-"""
+
 uploaded_file = st.file_uploader("Choose a face Image ...", type=["jpg", "png", "jpeg", "GIF"])
 if uploaded_file is not None:
     image = Image.open(uploaded_file)
